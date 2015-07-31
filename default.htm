@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<%@ Language="JavaScript" %>
+<!-- #include virtual="/_scripts/_tracking.asp" -->
+<!-- #include virtual="/usc/_include/uscGlobals.asp" -->
+<%
+Response.Expires = -1;
+
+var szDefaultBTData = "Y6.B.gAAAf.J.UL.MUet.KML.hjD.E";
+TrackSplash( szDefaultBTData );
+
+var szURL = "/usc/_bt_appredir.asp"
+
+var pApplyNow = new Parameters( szURL, null );
+	pApplyNow.Add("app=UNSOL");
+	pApplyNow.AddQS();
+	pApplyNow.Add("app=UNSOL&sc=1NMZ1384&m=9000111111W&B=B&ID=3131&uc=D9R&t=t&naInd=V");
+	pApplyNow.Add("TID", "133075");
+
+if( Request.QueryString("m").Count != 0 )
+{
+	var sz10_12 = GetAffiliate();
+	pApplyNow.Add( "m", InsertAffiliate( "9000111111W", sz10_12 ) );
+}
+
+pApplyNow.Remove( "ef_id" );
+pApplyNow.Remove( "siteId" );
+
+%>
+
+<script language="javascript">
+function TrackLinkAtlas(LinkDesc, destURL)
+{
+    var imgPixel = new Image( 1, 1 );
+    imgPixel.src = "https://view.atdmt.com/action/" + LinkDesc;
+    if(destURL != null)
+    {
+        var cmd = "location.href='" + destURL + "'";
+        var t = setTimeout( cmd, 900 );
+    }
+}
+</script>
+
+<html class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Citi Thank You Preferred Card</title>
+        <meta name="description" content="">
+            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/mobile.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/conditionizr-3.0.0.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="/usc/_include/mBox_2012/mbox.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="mboxDefault">
+    </div>
+    <script type="text/javascript">
+    mboxCreate("2013_July_USC_ThankYou_Preferred_q3_LP", "mcode=9000111111W", "source_code=1NMZ1SX3");
+
+    function showSpeedBump(url)
+{
+    window.open('/usc/SpeedBump/default.htm?redir='+url,'ImportantInformation','height=280,width=660,scrollbars=no');
+}
+    </script>
+    <div class="page">
+        <div class="wrapper">
+            <div class="header">
+                <div class="top-row">
+                     <a class="logo" href="https://www.citi.com/credit-cards/creditcards/CitiHome.do" target="_blank" title="Citi"><img src="img/logo_citi_big.png" alt="citi"></a>
+                     <div class="slogan">
+                         <h3>The Citi ThankYou<sup>&reg;</sup> Preferred Card</h3>
+                     </div>
+                </div> <!-- /.top-row -->
+            </div> <!-- /.header -->
+            <div class="bottom-row">
+                <div class="cta mobile">
+                    <img src="img/bdy_ccard-mobile.png" alt="Preferred Card" width="90%">
+
+                </div>
+                <div class="headline left">
+
+
+
+                    <h1><span style="margin-left:-1px">Earn up to</span> <br>
+                        <span class="one">30,000</span> bonus
+                        <span class="two">ThankYou<sup>&reg;</sup> Points</span>
+                        <!--<span class="three"><br class="mobile">enough for <span class="four">$200</span> in gift cards.</span></h1>-->
+						 <span class="three">Earn 20,000 points after $1,500 in purchases within the first 3 months of account opening. Earn 10,000 points after another <span class="four">$1,500</span> in purchases within the first 3 months of your second year of being a cardmember.<sup>2</sup>
+
+                        <!--<span class="three">After you spend <span class="four">$1,500</span> in purchases within 3 months of account opening.<sup>2</sup>-->
+
+</span></h1>
+                </div>
+                <div class="apply mobile">
+                    <a href="<%= pApplyNow.GetStringURL() %>" target="_blank" title="Apply Now">Apply Now <span></span></a>
+                </div>
+                <!-- /.left -->
+                <div class="description left">
+                    <p><span>0%</span> Intro APR on Balance Transfers and Purchases for <span>12</span> months. <br class="mobile"><br>
+                        After that, the variable APR will <br>
+                        be <span class="one">12.99% - 22.99%</span> based upon your creditworthiness.</p>
+                    <p class="small">Balance Transfer fee is either $5 or 3% of the amount of each transfer, <br class="mobile">whichever is greater.<sup>1</sup></p>
+                </div>
+                <div class="cta right desktop">
+                    <img src="img/bdy_ccard.png" alt="Preferred Card">
+                    <a href="<%= pApplyNow.GetStringURL() %>" target="_blank" title="Apply Now">Apply Now <span></span></a>
+                </div>
+            </div> <!-- /.bottom-row -->
+            <div class="clearfix"></div>
+            <div class="points-row clearfix">
+                <div class="new left">
+                    <span class="banner">Double Points on</span>
+                    <ul class="slider">
+                        <li>
+                            <div class="image left">
+                                <img src="img/bdy_points-photo1.png" alt="takeout">
+                                <span>takeout</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image left">
+                                <img src="img/bdy_points-photo2.png" alt="sports">
+                                <span style="letter-spacing: -2px;">sports</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image left">
+                                <img src="img/bdy_points-photo3.png" alt="dining">
+                                <span>dining</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image left">
+                                <img src="img/bdy_points-photo4.png" alt="concerts">
+                                <span style="letter-spacing: -3px;">concerts</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="description right">
+                        <img src="img/icn_points-new.png" alt="2x dining and entertainment">
+                        <p>2x ThankYou<sup>&reg;</sup> Points on dining and entertainment.</p>
+                    </div>
+                </div>
+                <div class="always right">
+                    <span class="banner">And as always</span>
+                    <div class="description ">
+                        <img src="img/icn_points-always.png" alt="1x other purchases">
+                        <p>1x ThankYou<sup>&reg;</sup> Points <br>on other purchases.</p>
+                    </div>
+                </div>
+            </div> <!-- /.points-row -->
+            <div class="features">
+                <div class="list-left left">
+                    <ul>
+                        <li>
+                            <p><strong>No Annual Fee.</strong><sup>1</sup></p>
+                        </li>
+                        <li>
+
+                            <p>Earn <strong>up to 30,000</strong> bonus ThankYou<sup>&reg;</sup> Points, redeemable for $300 in gift cards from a wide range of merchants.<sup>2</sup>
+</p>
+                        </li>
+                        <li>
+                            <p><strong>2 points</strong> per dollar spent on dining at restaurants and entertainment.<sup>3</sup>
+                            <a id="open-modal" href="#modal">Where do I earn more points?</a></p>
+                        </li>
+                        <li>
+                            <p><strong>Exclusive</strong> experiences for Citi ThankYou<sup>&reg;</sup> cardmembers.</p>
+                        </li>
+                    </ul>
+                </div> <!-- /.list-left -->
+                <div class="list-right left">
+                    <ul>
+                        <li>
+                            <p><strong>Points do not expire</strong> and earn unlimited ThankYou<sup>&reg;</sup> Points.<sup>3</sup></p>
+                        </li>
+                        <li>
+                            <p class="width278"><strong>So many ways to use your points.</strong></p>
+                            <p>Redeem for gift cards, electronics, travel rewards and even cash rewards or statement credits. You can also shop with points earned with your card at Amazon.com.<sup>4</sup></p>
+                        </li>
+                    </ul>
+                </div> <!-- /.list-right -->
+                <a class="cta" href="<%= pApplyNow.GetStringURL() %>" target="_blank" title="Apply Now">Apply Now <span></span></a>
+                <!-- <p class="phone-info">To Apply by Phone, call <span>1-800-514-6236</span></p> -->
+            </div> <!-- /.features -->
+            <div class="footer">
+                <div class="nav-small mobile">
+                    <ul>
+                        <li><a href="https://online.citibank.com/JRS/portal/template.do?ID=TermsDisclaimer" target="_blank" title="Terms and Conditions">Terms and Conditions</a></li>
+                        <li><a href="https://online.citibank.com/US/JRS/portal/template.do?ID=Privacy" target="_blank" title="Privacy">Privacy</a></li>
+                        <li><a href="https://online.citibank.com/US/JRS/pands/detail.do?ID=SecurityCenter" target="_blank" title="Security">Security</a></li>
+                    </ul>
+                    <img src="img/logo_citi_small-mobile.png" alt="citi" class="logo">
+                </div> <!-- /.nav -->
+                <div class="nav desktop">
+                    <img src="img/logo_citi_small.png" alt="citi" class="logo">
+                    <ul>
+                        <li><a href="https://online.citibank.com/JRS/portal/template.do?ID=TermsDisclaimer" target="_blank" title="Terms and Conditions">Terms and Conditions</a></li>
+                        <li><a href="https://online.citibank.com/US/JRS/portal/template.do?ID=Privacy" target="_blank" title="Privacy">Privacy</a></li>
+                        <li><a href="https://online.citibank.com/US/JRS/pands/detail.do?ID=SecurityCenter" target="_blank" title="Security">Security</a></li>
+                    </ul>
+                </div> <!-- /.nav -->
+
+                <div class="legal">
+                    <p class="first">&copy; 2014 Citibank, N.A., Citi, Citibank, Citi ThankYou, ThankYou and Citi with Arc Design are registered service marks of Citigroup, Inc.</p>
+                    <h5 class="first">Terms and Conditions</h5>
+
+
+                    <p><sup>1</sup>Introductory rate of 0% for 12 months from the date of account opening on purchases and an introductory rate of 0% for 12 months from date of first transfer for balance transfers. Balance transfers must be completed within 4 months of account opening. After the introductory period ends, your standard APR for purchases will be applied to unpaid promotional balances, new purchases and new balance transfers. The standard variable APR for purchases for the Citi ThankYou Preferred Card is 12.99%, 15.99%, 18.99%, 20.99%, or 22.99% based on creditworthiness. The standard variable APR for cash advances is 25.24%. The variable penalty APR is up to 29.99% and may be applied if you make a late payment or make a payment that is returned. Minimum finance charge $0.50. Fee for foreign purchases — 3% of each purchase transaction in US dollars. Cash advance fee — either $10 or 5% of the amount of each cash advance, whichever is greater. Balance transfer fee — Either $5 or 3% of the amount of each transfer, whichever is greater. Subject to credit approval. Additional limitations, terms and conditions apply. You will be given further information when you apply.</p>
+
+                    <p><sup>2</sup><strong>Earn up to 30,000 bonus points</strong>: Earn 20,000 bonus points after you make $1,500 in purchases within the first 3 months of account opening. Earn 10,000 points after you make another $1,500 in purchases within the first 3 months of your second year of being a cardmember. Balance transfers, cash advances, account fees, interest, and items returned for credit do not qualify as an eligible purchase. Bonus ThankYou points are not available if you have had a Citi ThankYou Preferred card opened or closed in the past 18 months.
+</p>
+                    <h5><sup>3</sup>Citi ThankYou<sup>&reg;</sup> Rewards</h5>
+                    <h5>Citi ThankYou Rewards Information for Citi ThankYou Preferred Card</h5>
+
+                    <p>Unless you are participating in a limited-time offer, you will earn: <br>
+                        •2 ThankYou Points for every dollar you spend on purchases at restaurants and on select entertainment merchants including sports promoters, theatrical promoters, movie theaters, amusement parks, tourist attractions, record stores and video rental stores; <br>
+                        •1 ThankYou Point for every dollar you spend on all other purchases.</p>
+
+                    <p><strong>Restaurants</strong> are classified as dining establishments that primarily prepare food and drinks for immediate consumption by consumers, either on the merchant’s premises or packaged for take-out, and include bars, cocktail lounges, discotheques, nightclubs, taverns and fast food restaurants. <strong>Sports promoters</strong> are classified as merchants that operate and promote live sporting events (professional or semi-professional), and may also include sports stadiums. <strong>Theatrical promoters</strong> are classified as merchants that operate live theatrical productions or concerts, and include ticketing agencies. <strong>Movie theaters</strong> are classified as establishments that sell tickets and refreshments for movie productions. <strong>Amusement parks</strong> (including zoos, circuses and aquariums) are classified as establishments that operate parks or carnivals and offer mechanical rides and games and/or live animal shows. <strong>Tourist attractions and museums</strong> (including art galleries) are classified as establishments that operate attractions and exhibits for tourists. <strong>Record stores</strong> are classified as establishments that sell CDs and related items, including online record stores. <strong>Video rental stores</strong> are classified as merchants that rent DVDs and/or games and related equipment for consumer use, including online video rentals.</p>
+
+                    <p>We do not determine how merchants or establishments are classified, however, they are generally classified based upon the merchant’s primary line of business. We reserve the right to determine which purchases qualify for this offer. Purchases not eligible to receive the additional ThankYou Points include, but are not limited to, purchases made at warehouse clubs, discount stores, department stores and convenience stores.</p>
+
+                    <p><strong><sup>4</sup>Amazon.com:</strong> Citi is not responsible for products or services offered by other companies. Featured items at Amazon.com are not part of the ThankYou<sup>&reg;</sup> Rewards collection and are subject to availability. See thankyou.com/terms for the terms and conditions for using Shop with Points with Citi ThankYou<sup>&reg;</sup> Rewards. Certain restrictions apply for Shop with Points at Amazon.com, see <a href="http://www.amazon.com/citithankyou" onClick="javascript:showSpeedBump('amazon');return false;">www.amazon.com/citithankyou</a> for more information. Amazon, Amazon.com, the smile logo, and the Amazon.com logo are registered trademarks of Amazon.com Inc., or its affiliates. Amazon is not a sponsor of this promotion.</p>
+
+                </div> <!-- /.footer -->
+            </div> <!-- /.footer -->
+        </div> <!-- /.wrapper -->
+    </div> <!-- /.page -->
+
+    <div id="modal" style="display: none;">
+        <h2>Where do I earn more points?</h2>
+        <a href="#" title="Close" class="close">Close</a>
+        <div class="questions">
+            <ul>
+                <li>
+                    <p class="question">Q: What purchases earn 2X points?</p>
+                    <p class="answer"><strong>A:</strong> You will earn 2 points per dollar spent on purchases you make for dining at restaurants and at select entertainment merchants.  </p>
+                </li>
+                <li>
+                    <p class="question">Q: What type of merchants qualify to earn 2x points on dining?</p>
+                    <p class="answer"><strong>A:</strong> Merchants in the dining category include fast food restaurants to fine dining establishments. They are classified as dining establishments because they primarily prepare food and drinks for immediate consumption by consumers, either on the merchant’s premises or packaged for take-out, and include bars, cocktail lounges, discotheques, nightclubs, taverns and fast food restaurants.</p>
+                    <p class="answer">Please note that some merchants that sell food and drinks located within larger merchants that sell other goods and services may not be included in this category; for example department store cafeterias or discount store food counters.</p>
+                </li>
+                <li>
+                    <p class="question">Q: What type of merchants qualify to earn 2x points on entertainment?</p>
+                    <p class="answer"><strong>A:</strong> Entertainment is defined broadly as purchases made for live performances (e.g. concerts, theatre), movie theaters, amusement parks and cultural events (e.g. zoos, museums).</p>
+                    <p class="answer">Live performances are made up of theatrical and sports promoter merchants. Theatrical promoters are classified as merchants that operate live theatrical productions or concerts, and include ticketing agencies.</p>
+                    <p class="answer">Sports promoters are classified as merchants that operate and promote live sporting events (professional or semi-professional), and may also include sports stadiums.</p>
+                    <p class="answer">Movie theaters are classified as establishments that sell tickets and refreshments for movie productions.</p>
+                    <p class="answer">Amusement parks (including zoos, circuses and aquariums) are classified as establishments that operate parks or carnivals and offer mechanical rides and games and/or live animal shows.</p>
+                    <p class="answer">Tourist attractions and museums (including art galleries) are classified as establishments that operate attractions and exhibits for tourists.</p>
+                    <p class="answer">Record stores are classified as establishments that sell CDs, music downloads and related items, from online record stores.</p>
+                    <p class="answer">Video rental stores are classified as merchants that rent DVDs and/or games and related equipment for consumer use, including online video rentals.</p>
+                </li>
+                <li>
+                    <p class="question">Q: What determines whether a merchant falls within a particular rewards category?</p>
+                    <p class="answer"><strong>A:</strong> We do not determine how merchants or establishments are classified. Merchants who accept Visa/MasterCard credit cards are assigned a merchant code based on the merchant’s primary line of business and the kinds of products and services they sell.</p>
+                    <p class="answer">Sometimes a merchant will sell a particular item that appears to fit within the stated qualifying category, but that merchant may not have a merchant code that fits within that category. Therefore purchases with that merchant will not qualify for the stated rewards offer on category purchases. Citi reserves the right to determine which purchases qualify for this offer. Purchases not eligible to receive the additional ThankYou<sup>&reg;</sup> Points include; but are not limited to, purchases made at warehouse clubs, discount stores, department stores and convenience stores.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+<% var szSiteCatalystPageName = "USC 2014 July ThankYou Preferred 20k internal LP"; %>
+<!-- #include virtual="/usc/_include/SiteCatalyst_2011/_SiteCatalyst _pagecode.asp" -->
+
+    </body>
+
+</html>

@@ -1,0 +1,215 @@
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	/* -----------------
+	    GENERAL STYLES 
+	------------------- */
+	body {
+		background-image: url('../img/bg_body_top-tablet.png');
+	}
+
+	.page {
+		background-image: url('../img/bg_top-row-tablet.png');
+		background-repeat: no-repeat;
+	}
+
+	.wrapper {
+		width: auto;
+		padding: 0 30px;
+	}
+
+	/* ---------------
+	    BOTTOM ROW 
+	--------------- */
+
+	
+	.bottom-row .headline {
+		width: 364px;
+		margin-top: 46px;
+		margin-bottom: 12px;
+	}
+
+	.bottom-row .headline h1 .one {
+    font-family: 'interstatebold';
+    font-size: 37px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+	.bottom-row .headline br {
+		display: none;
+	}
+
+	.bottom-row .headline h1 .three {
+		display: inline-block;
+	}
+
+	.bottom-row .description {
+		width: 620px;
+	}
+
+	.bottom-row .description p {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	.bottom-row .description p.small {
+		font-size: 16px;
+	}
+
+	.bottom-row .description p span {
+		font-size: 17px;
+	}
+
+	.bottom-row .description br {
+		display: none;
+	}
+
+	.bottom-row .cta {
+		position: absolute;
+		top: -53px;
+	}
+
+	/* ---------------
+	    POINTS ROW 
+	--------------- */
+	.points-row {
+		border: 1px solid #cccccc;
+		width: 701px;
+		margin: 42px auto 0;
+	}
+
+	.points-row .new {
+		width: 457px;
+		height: 156px;
+	}
+
+	.points-row .new .banner {
+		background-image: url('../img/bg_points-banner-tablet.png');
+		font-size: 21px;
+		width: 222px;
+		height: 69px;
+		left: -19px;
+		line-height: 42px;
+	}
+
+	.points-row .new ul, .points-row .new li, .points-row .new .image, .points-row .new .image img {
+		width: 224px;
+		height: 155px;
+	}
+
+	.points-row .new .image span {
+		font-size: 51px;
+		line-height: 155px;
+		width: 224px;
+	}
+	
+	.points-row .new .description {
+		width: 180px;
+		margin-left: 28px;
+	}
+
+	.points-row .new .description img {
+		margin-top: 32px;
+		width: 120px;
+		height: 40px;
+		margin-left: 8px;
+	}
+
+	.points-row .new .description p {
+		font-size: 18px;
+		line-height: normal;
+		margin-left: 7px;
+		width: 200px;
+	}
+
+	.points-row .new .description p sup {
+		font-size: 12px;
+		vertical-align: top;
+		top: 5px;
+	}
+
+	.points-row .always {
+		width: 210px;
+		float: left;
+	}
+
+	.points-row .always .banner {
+		background-image: url('../img/bg_points-banner-tablet.png');
+		font-size: 21px;
+		width: 178px;
+		height: 69px;
+		left: -19px;
+		line-height: 42px;
+	}
+	
+	.points-row .always .description {
+		margin-left: 26px;
+		margin-top: 35px;
+	}
+
+	.points-row .always .description img {
+		margin-top: 28px;
+		width: 84px;
+		height: 40px;
+	}
+
+	.points-row .always .description p {
+		font-size: 18px;
+		line-height: normal;
+		margin-left: 8px;
+		width: 170px;
+	}
+
+	.points-row .always .description p sup {
+		font-size: 12px;
+		vertical-align: top;
+		top: 5px;
+	}
+
+	.points-row .always .description p br {
+		display: none;
+	}
+
+	/* -------------
+	    FEATURES 
+	------------- */
+	.features {
+		width: 588px;
+		margin: 47px auto 80px;
+	}
+
+	.features .list-left, .features .list-right {
+		float: none;
+		width: auto;
+		margin: 0;
+	}
+
+	.features .list-left ul li {
+		margin-bottom: 20px;
+	}
+
+	.features .list-left ul li p, .features .list-right ul li p  {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.features .list-left li p a {
+		color: #00adf0;
+		display: block;
+	}
+
+	/* -----------
+	    MODAL 
+	------------- */
+	.fancybox-wrap {
+		position: absolute !important;
+		-webkit-overflow-scrolling: touch !important;
+	}
+
+	.fancybox-inner {
+		overflow: scroll !important;
+		-webkit-overflow-scrolling: touch !important;
+	}
+
+}
